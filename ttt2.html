@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style type ="text/css">
+        div.square {display: inline-block; height: 100px; width: 100px;
+             margin: 5px;border: 1px solid #000;
+             font-size:75px; text-align: center; line-height: 100px;}
+        div.square:hover {background-color:aqua}
+        div.container {display: flex; max-width: 340px;flex-wrap: wrap;
+             margin-left:auto; margin-right:auto;}
+        h1#title {text-align: center; font-size: 50px}
+        div.info {display: block; width: 340px; text-align: center;
+                 margin-left:auto; margin-right:auto; border: 3px solid red; 
+                 font-size: 30px; padding: 20px 0px; margin-top: 20px; margin-bottom: 20px;}
+    </style>
+</head>
+<body>
+    <h1 id = "title">Tic Tac Toe!</h1>
+    <div class= "info" id ="turn">
+     X Players Turn
+    </div>
+    <div class = "container">
+        <script>
+            const NUM_SQUARES = 9;
+            for (i=0; i<NUM_SQUARES; i++)
+            {
+            id = "sq"+i;
+            document.write( "<div class='square' id='" + id + "'></div>" );
+            }
+        </script>
+    </div>
+    <div class ="info" id ="results">
+        X Player Wins!
+    </div>
+</body>
+</html>
